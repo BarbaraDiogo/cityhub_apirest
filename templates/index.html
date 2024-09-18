@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}  
+    <div class="content">
+        <div class="botao1">
+            <button type="submit" class="w3-button w3-rounder" onclick="window.location.href='{% url 'sobre' %}'">
+                <p><b>APRENDA</b></p>
+            </button>
+        </div>
+        <div class="botao2">
+            {% if user.is_authenticated %}
+                <button type="submit" class="w3-button w3-rounder" onclick="window.location.href='{% url 'meu_progresso' %}'">
+                    <p><b>PROGRESSO</b></p>
+                </button>
+            {% else %}
+                <button type="submit" class="w3-button w3-rounder" onclick="window.location.href='{% url 'cadastro' %}'">
+                    <p><b>PROGRESSO</b></p>
+                </button>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

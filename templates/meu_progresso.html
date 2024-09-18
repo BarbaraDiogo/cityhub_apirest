@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+<div class="container_meu_progresso_bloco">
+    <div class="container_meu_progresso">
+        <div class="meu_progresso">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <form action="{% url 'meu_progresso' %}" method="post">
+                {% csrf_token %}
+                <h2>Informe os dados do seu progresso:</h2>
+                <div class="field">
+                    <input type="text" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="field">
+                    <select id="tipo_energia_anterior" name="tipo_energia_anterior">
+                        <option value="" disabled selected>Selecione o tipo de energia anterior</option>
+                        {% for tipo in tipos_energia %}
+                        <option value="{{ tipo.id }}">{{ tipo.tipo }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="field">
+                    <select id="tipo_energia_atual" name="tipo_energia_atual">
+                        <option value="" disabled selected>Selecione o tipo de energia atual</option>
+                        {% for tipo in tipos_energia %}
+                        <option value="{{ tipo.id }}">{{ tipo.tipo }}</option>
+                        {% endfor %}
+                    </select>
+                </div>                
+                <div class="field">
+                    <input type="number" name="custo_anterior" placeholder="Custo Anterior (R$)" required>
+                </div>
+                <div class="field">
+                    <input type="number" name="custo_atual" placeholder="Custo Atual (R$)" required>
+                </div>
+                    <input type="hidden" name="duracao" value="30">
+                <div class="field">
+                    <input type="date" name="data" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

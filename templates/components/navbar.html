@@ -1,0 +1,15 @@
+{% load static %}
+<nav class="navbar">
+    <div class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="">
+    </div>
+    <ul>
+        <li><a href="{% url 'index' %}">Início</a></li>
+        <li><a href="{% url 'sobre' %}">Sobre</a></li>
+        {% if user.is_authenticated %}
+            <li><a class="minha_conta" href="{% url 'area_logada' %}"></i> Minha conta</a></li>
+        {% else %}
+            <li><a href="{% url 'cadastro' %}"><i class="fa fa-user"></i></a></li>
+        {% endif %}
+    </ul>
+</nav>

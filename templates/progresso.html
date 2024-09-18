@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+    <div class="content_progresso">
+        <div class="progresso">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}" style="margin-left: 150px; margin-bottom: 190px;">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div class="progresso-barra-container">
+                <div class="progresso-barra" id="BarraProgresso"></div>
+                <img src="{% static 'images/raio.png' %}" class="raio" alt="Raio">
+            </div>
+            <div class="rank">
+                <p>Rank: <span>{{ rank }}</span></p>
+            </div>
+        </div>
+        <div class="container_progresso">
+            <h1> {{ titulo }} </h1>
+            <br>
+            <h3>{{ economia }}</h3>
+            <h3 id="porcentagem">{{ porcentagem }}</h3>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+  <script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

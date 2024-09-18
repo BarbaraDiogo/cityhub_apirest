@@ -1,0 +1,29 @@
+[
+    {
+      "model": "site_cityhub.progress",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "energiaAnterior": 1,
+        "energiaAtual": 2,
+        "custoAnterior": 10.50,
+        "custoAtual": 9.99,
+        "duracao": 5.5,
+        "dt": "2024-05-09T12:00:00Z"
+      }
+    },
+    {
+      "model": "site_cityhub.progress",
+      "pk": 2,
+      "fields": {
+        "user": 2,
+        "energiaAnterior": 2,
+        "energiaAtual": 1,
+        "custoAnterior": 8.75,
+        "custoAtual": 7.25,
+        "duracao": 4.2,
+        "dt": "2024-05-09T12:00:00Z"
+      }
+    }
+  ]
+  

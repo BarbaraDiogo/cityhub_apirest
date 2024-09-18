@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+<div class="area_logada">
+    <div class="area_logada_opcao">
+        <div class="area_logada_opcao2">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <h1>Área Logada</h1>
+            <p>Você está logado como: {{ user.email }}</p>
+            <button class="btn botao-sair" onclick="location.href='{% url 'sair' %}'">Sair</button>
+            <button class="btn botao-deletar" onclick="confirmarDelecao(this)" data-url="{% url 'deletar_conta' %}">Deletar Conta</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+  <script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

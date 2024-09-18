@@ -1,0 +1,24 @@
+[
+    {
+        "model": "site_cityhub.user",
+        "pk": 1,
+        "fields": {
+            "nome": "NomeExemplo1",
+            "email": "email1@example.com",
+            "senha": "senha1",
+            "dt": "2024-05-09T12:00:00Z"
+        }
+    },
+
+    {
+      "model": "site_cityhub.user",
+      "pk": 2,
+      "fields": {
+        "nome": "NomeExemplo2",
+        "email": "email2@example.com",
+        "senha": "senha2",
+        "dt": "2024-05-08T12:00:00Z"
+      }
+    }
+  ]
+  

@@ -1,0 +1,491 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.container_cadastro_bloco, .area_logada {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/cityhub.png);
+}
+
+.navbar {
+    background-color: rgba(23, 10, 41, 0.5); /* Cor de fundo da navbar */
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999; /* Para garantir que a navbar fique sobreposta a outros elementos */
+}
+
+.logo{
+    width: 0;
+    height: 5px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+}
+
+img{
+    width: 30px;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 7px;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar ul li a i{
+    color: white;
+}
+
+.navbar ul li a:hover{
+    background-color: #ffc20061;
+    border-radius: 2px;
+}
+
+.navbar .minha_conta {
+    background-color: #ffc200;
+    border-radius: 2px;
+}
+
+.content{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image:url(../images/home_screen.png);
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.container_cadastro, .container_meu_progresso, .area_logada_opcao{
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255,0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 30px rgba(0,0,0, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+
+.login_cadastro{
+    width: 250px;
+    padding: 30px 10px;
+    backdrop-filter: blur(20px);
+}
+
+.esqueci_senha{
+    display: block;
+}
+
+.cadastro, .area_logada_opcao2 {
+    width: 450px;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 0 10px; /* Espaçamento entre as colunas */
+}
+
+.area_logada_opcao2 h1{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.botao-sair {
+    background-color: #007bff;
+    color: white;
+}
+
+.botao-sair:hover {
+    background-color: #007bff40;
+    color: white;
+}
+
+.botao-deletar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.botao-deletar:hover {
+    background-color: #dc35456b;
+    color: white;
+}
+
+.container_cadastro .login_cadastro h2{
+    margin-bottom: 115px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.login_cadastro button{
+    font-size: 20px;
+    outline: none;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 40px;
+    box-shadow: 3px 3px 30px rgba(0,0,0, 0.3);
+    margin-top: 15px;
+    color: white;
+    background-color: #ffc20061;
+}
+
+.container_cadastro .cadastro h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+span{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.login_cadastro h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: x-large;
+    color: #170929;
+    margin-left: 10px;
+}
+
+.container_cadastro .field{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container_cadastro .field input{
+    height: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 60px;
+}
+
+.container_cadastro .field i{
+    position: absolute;
+    left: 97px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 40px;
+    font-size: 18px;
+    color: #170929a6;
+}
+
+.cadastro button{
+    font-size: 20px;
+    outline: none;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+    margin: 30px;
+    box-shadow: 3px 3px 30px rgba(0,0,0, 0.3);
+    background-color: #170929;
+    color: white;
+}
+
+.container_cadastro a,
+.container_cadastro p{
+    margin-top: 15px;
+}
+
+.container_cadastro a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container_cadastro a:hover{
+    text-decoration: underline;
+}
+
+
+.botao1, .botao2 {
+    margin: 170px;
+}
+
+.botao1, .botao2, p {
+    padding-top: 10px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 70px;
+    font-size: large;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e2a36;
+    border-color: #cccccc;
+}
+
+p{
+    color: darkkhaki;
+}
+
+.content_sobre{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image:url(../images/imagem_sobre.png);
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.container_info{
+    background-color: darkmagenta;
+    opacity: 60%;
+    width: 65%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border: 10px white ;
+    border-style: dashed solid dashed solid;
+}
+
+.container_info p{
+    font-size: x-large;
+    color: aliceblue;
+}
+
+.content_progresso {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image:url(../images/progesso_background.png);
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.container_progresso{
+    background-color: #160928;
+    opacity: 0.6;
+    height: 70%;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 20px;
+    border: 10px solid white ;
+}
+
+.progresso{
+    align-self: flex-end;
+    margin-bottom: 2%;
+}
+
+.progresso-barra-container {
+    width: 550px;
+    margin-left: 120px;
+    background-color: #dddddd8f;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.progresso-barra {
+    height: 65px;
+    background-color: #4CAF50;
+    width: 10%;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out; /* Animação suave para mudanças de largura */
+}
+
+.raio {
+    width: auto;
+    height: 14%;
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    transform: translate(-50%, -50%); /* Ajuste fino para centralização perfeita */
+    z-index: 2; /* Garante que a imagem fique por cima da barra de progresso */
+}
+
+.rank{
+    background-color: #160928;
+    opacity: 0.6;
+    border: 10px solid white;
+    padding: 10px;
+    margin-left: 50%; 
+    width: 400px;
+    text-align: center;
+}
+
+.rank span{
+    color: #4CAF50;
+}
+
+.container_progresso h1{
+    color: #fff597;
+    font-size: xxx-large;
+}
+
+.container_progresso h3{
+    color: #fff597;
+    padding-top: 40px;
+    font-size: xx-large;
+}
+
+.rank p{
+    font-size: larger;
+    color: aliceblue;
+}
+
+.container_meu_progresso_bloco {
+    height: 70%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(../images/progesso_background.png);
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.meu_progresso {
+    padding: 40px;
+}
+
+.meu_progresso h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.meu_progresso .progresso2 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.meu_progresso .field{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.meu_progresso .field input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.meu_progresso .field input[type="date"] {
+    cursor: pointer;
+}
+
+.meu_progresso .field select {
+    width: 100%;  /* Largura completa para preencher o contêiner */
+    padding: 10px; /* Padding interno para altura e conforto ao digitar */
+    margin-bottom: 10px; /* Espaçamento entre os campos */
+    border: 1px solid #ccc; /* Borda para se assemelhar aos campos de entrada padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna para dar profundidade */
+    font-size: 16px; /* Tamanho de fonte confortável para leitura */
+    color: #333; /* Cor de texto escura para contraste */
+    background-color: white; /* Fundo branco para os campos */
+    appearance: none; /* Remove estilos padrão do navegador para select */
+    -webkit-appearance: none; /* Especificamente para navegadores baseados em WebKit como Safari e Chrome */
+    -moz-appearance: none; /* Para Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 140 120"><polygon points="0,0 140,0 70,120" style="fill:black;"/></svg>'); /* Adiciona ícone de seta para baixo */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Posiciona o ícone de seta no lado direito, centralizado verticalmente */
+    background-size: 14px 12px; /* Tamanho do ícone de seta */
+}
+
+/* Estilo para foco nos inputs e selects para melhorar a acessibilidade */
+.meu_progresso .field input:focus, .field select:focus {
+    border-color: #0056b3;
+    outline: none; /* Remove o outline padrão para um estilo mais limpo e adiciona borda colorida */
+    box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.25); /* Sombra azul ao redor do campo quando focado */
+}
+
+
+.meu_progresso button {
+    font-size: 20px;
+    outline: none;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    width: -webkit-fill-available;
+    cursor: pointer;
+    margin: 30px;
+    box-shadow: 3px 3px 30px rgba(0,0,0, 0.3);
+    background-color: #170929;
+    color: white;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #008000a6;
+}
+
+.alert-error {
+    background-color: #ff000085;
+}

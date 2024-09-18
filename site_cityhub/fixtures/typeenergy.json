@@ -1,0 +1,42 @@
+[
+  {
+      "model": "site_cityhub.typeenergy",
+      "pk": 1,
+      "fields": {
+          "tipo": "Energia Solar",
+          "dt": "2024-05-24T00:00:00Z"
+      }
+  },
+  {
+      "model": "site_cityhub.typeenergy",
+      "pk": 2,
+      "fields": {
+          "tipo": "Energia Hidrelétrica",
+          "dt": "2024-05-24T00:00:00Z"
+      }
+  },
+  {
+      "model": "site_cityhub.typeenergy",
+      "pk": 3,
+      "fields": {
+          "tipo": "Energia Nuclear",
+          "dt": "2024-05-24T00:00:00Z"
+      }
+  },
+  {
+      "model": "site_cityhub.typeenergy",
+      "pk": 4,
+      "fields": {
+          "tipo": "Energia Eólica",
+          "dt": "2024-05-24T00:00:00Z"
+      }
+  },
+  {
+      "model": "site_cityhub.typeenergy",
+      "pk": 5,
+      "fields": {
+          "tipo": "Energia de Biomassa",
+          "dt": "2024-05-24T00:00:00Z"
+      }
+  }
+]
